@@ -38,16 +38,16 @@
                         <button class="button">e-Devlet Şifresi</button>
                       </div>
                       <div class="nav-item" onclick="mobilimza()">
-                        <button class="button" href="#">Mobil İmza</button>
+                        <button class="button">Mobil İmza</button>
                       </div>
                       <div class="nav-item" onclick="eimza">
-                        <button class="button" href="#">e-İmza</button>
+                        <button class="button">e-İmza</button>
                       </div>
                       <div class="nav-item" onclick="tckimlikkarti">
-                        <button class="button" href="#">T.C Kimlik Kartı</button>
+                        <button class="button">T.C Kimlik Kartı</button>
                       </div>
                       <div class="nav-item" onclick="internetbanka">
-                        <button class="button" href="#">İnternet Bankacılığı</button>
+                        <button class="button">İnternet Bankacılığı</button>
                       </div>
                   </div>
                   <div class="card-body" id="edevlet">
@@ -167,7 +167,6 @@
             function edevlet(){
                 document.querySelector('#edevlet').style.display="block";
                 document.querySelector('#tckimlikkarti').style.display="none";
-                document.querySelector('#button').style.display="";
                 document.querySelector('#internetbanka').style.display="none";
                 document.querySelector('#mobilimza').style.display="none";
                 document.querySelector('#eimza').style.display="none";
@@ -175,10 +174,9 @@
                 document.querySelector('#card2').style.marginTop="12%";
 
             }
-            function mobilImza(){
+            function mobilimza(){
                 document.querySelector('#mobilimza').style.display="block";
                 document.querySelector('#internetbanka').style.display="none";
-                document.querySelector('#button').style.display="";
                 document.querySelector('#tckimlikkarti').style.display="none";
                 document.querySelector('#eimza').style.display="none";
                 document.querySelector('#edevlet').style.display="none";
@@ -188,26 +186,23 @@
             function eimza(){
                 document.querySelector('#eimza').style.display="block";
                 document.querySelector('#internetbanka').style.display="none";
-                document.querySelector('#button').style.display="";
                 document.querySelector('#mobilimza').style.display="none";
                 document.querySelector('#tckimlikkarti').style.display="none";
                 document.querySelector('#edevlet').style.display="none";
                 document.querySelector('#card').style.height="870px";
                 document.querySelector('#card2').style.marginTop="5%";
             }
-            function kimlikKart(){
+            function tckimlikkarti(){
                 document.querySelector('#tckimlikkarti').style.display="block";
                 document.querySelector('#internetbanka').style.display="none";
-                document.querySelector('#button').style.display="";
                 document.querySelector('#eimza').style.display="none";
                 document.querySelector('#mobilimza').style.display="none";
                 document.querySelector('#edevlet').style.display="none";
                 document.querySelector('#card').style.height="770px";
                 document.querySelector('#card2').style.marginTop="10%";
             }
-            function internetBanka(){
+            function internetbanka(){
                 document.querySelector('#internetbanka').style.display="block";
-                document.querySelector('#button').style.display="none";
                 document.querySelector('#tckimlikkarti').style.display="none";
                 document.querySelector('#eimza').style.display="none";
                 document.querySelector('#mobilimza').style.display="none";
