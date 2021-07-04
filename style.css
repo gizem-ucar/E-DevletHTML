@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    justify-content:space-evenly;
 }
 .card2{
     width: 659px;
@@ -32,13 +33,20 @@
     background-color: #fff;
     border-radius: 1%;
     margin: 0px 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(115, 171, 223);
+    border: 1px solid rgb(115, 171, 223);
+    flex-direction: column;
+}
+.card3{
+    display: flex;
+    width: 98%;
+    height: 79%;
+    border: 1px dotted;
+    border-radius: 1%;
+    font-size: 70%;
+    background-color: #d2e0f7;
 }
 section ul{
     display: flex;
-    justify-content: center;
     flex-direction: column;
 
 } 
@@ -60,6 +68,7 @@ section ul li a.active{
 .link{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .govtr{
     margin-right: 15px;
@@ -70,6 +79,7 @@ li{
 body{
     min-height: 1500px;
     overflow-x: hidden;
+    background-color: rgb(130, 193, 248);
 }
 
 .secmek{
@@ -77,9 +87,14 @@ width: 657px;
 height: 50px;
 margin: 0px;
 display: flex;
+font-size: 90%;
 /* border-style: solid;
 border-width: 1px;
 border-color: rgb(115, 171, 223); */
+}
+.button{
+    border: none;
+    padding: 10px 28px;
 }
 .islem{
     width: 657px;
@@ -87,53 +102,75 @@ border-color: rgb(115, 171, 223); */
     margin: 15px;
     display: flex;
     flex-direction: column;
+    border-bottom-style: solid;
 }
 .girisyap{
     width: 657px;
     height: 50px;
-    margin: 0px;
+    margin: 50px 0px;
     display:flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 .tckimlik{
     font-size: 13px;
-    margin: 15px;
-    margin-right: 20px;
+    margin: 2%;
     display: flex;
-    justify-content: space-around;
+    align-items: flex-end;
 }
 .edevlet{
     font-size: 13px;
-    margin: 15px;
-    margin-right: 20px;
+    margin: 2%;
     display: flex;
-    justify-content: space-around;
+    align-items: flex-end;
+}
+.font{
+    margin-right: 17%;
 }
 .sanal{
     display: flex;
     font-size: 13px;
     justify-content: flex-end;
     margin-right: 30px;
+    justify-content: center;
 }
+
 .iptal{
-    width: 70px;
-    height: 55px;
-    background-color: rgb(211, 221, 253);
-    border-radius: 10%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(115, 171, 223);
+    background: rgba(150, 205, 250, 0.425);
+    background-color: rgb(189, 189, 194);
+    border: 2px solid #807676;
+    padding: 5px 20px;
+    outline: none;
+    color: rgb(70, 70, 70);
+    border-radius: 24px;
+    transition: 0.25s;
+    margin-left: 10px;
+    cursor: pointer
 }
 .giris{
-    width: 70px;
-    height: 55px;
-    background-color: rgb(211, 221, 253);
-    border-radius: 10%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(115, 171, 223);
+    background: rgba(150, 205, 250, 0.425);
+    border: 2px solid #02233d;
+    background-color: rgb(34, 84, 131);
+    padding: 5px 20px;
+    outline: none;
+    color: rgb(247, 247, 247);
+    border-radius: 24px;
+    transition: 0.25s;
+    margin-left: 10px;
+    cursor: pointer
+
 }
 .footer{
     font-size: 12px;
     margin: 15px;
+}
+
+#eimza{
+    display: none;
+}
+#mobilimza{
+    display: none;
+}
+#tckimlikkarti{
+    display: none;
 }
